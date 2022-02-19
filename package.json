@@ -2,5 +2,28 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "figlet": "^1.5.2"
-  }
+  },
+  "name": "js",
+  "version": "1.0.0",
+  "main": "file_org.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tk84274/file-org.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "orgFiles" : "file_org.js"
+  },
+  "bugs": {
+    "url": "https://github.com/tk84274/file-org/issues"
+  },
+  
+  "homepage": "https://github.com/tk84274/file-org#readme",
+  "description": ""
 }

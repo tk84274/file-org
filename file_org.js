@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 let fs = require("fs");
 const { type } = require("os");
 const { dirname } = require("path");
@@ -28,6 +29,11 @@ switch(command){
 
 function organize(dirPath){
     //console.log(dirPath);
+    if(dirPath==undefined){
+        // console.log("path undefined");
+        // return;
+        dirPath = process.cwd();
+    }
     let  isDirectory = fs.statSync(dirPath).isDirectory();
     if(isDirectory){
         let orgDir = path.join(dirPath, "organized_folder");
@@ -96,6 +102,9 @@ function get_type(ext){
 
 function tree(dirPath){
     // console.log("Tree function");
+    if(dirPath==undefined){
+        dirPath = process.cwd();
+    }
     let  isDirectory = fs.statSync(dirPath).isDirectory();
     if(isDirectory){
         let files = fs.readdirSync(dirPath);
